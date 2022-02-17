@@ -8,16 +8,6 @@ function sortByPopulation(property){
        return 0;  
     }  
 }
-function sortByValue(jsObj){
-    var sortedArray = [];
-    for(var i in jsObj)
-    {
-        console.log(i)
-        // Push each JSON Object entry in array by [value, key]
-        sortedArray.push([jsObj[i], i]);
-    }
-    return sortedArray.sort();
-}
 
 function dataVisualization(country,width,data){
     var row = document.createElement("div")
